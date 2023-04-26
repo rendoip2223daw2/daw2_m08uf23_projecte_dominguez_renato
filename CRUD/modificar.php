@@ -75,7 +75,7 @@ use Laminas\Ldap\Ldap;
     </header>
         <div>
             <?php
-            if ($_POST['method'] == "PUT") {
+            if (isset($_POST['method']) && $_POST['method'] == "PUT") {
                 if ($_POST['uid'] && $_POST['ou'] && $_POST['radioValue'] && $_POST['nouContingut']) {
 
                     $atribut = $_POST['radioValue'];
@@ -138,4 +138,3 @@ use Laminas\Ldap\Ldap;
     </body>
 
     </html>
-<?php

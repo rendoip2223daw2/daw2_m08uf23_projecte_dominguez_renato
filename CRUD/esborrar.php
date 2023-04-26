@@ -12,7 +12,8 @@ use Laminas\Ldap\Ldap;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esborrar Usuari</title>
     <style>
-        /* Aquí puedes poner tus estilos CSS */
+        <style>
+        /* Estilos CSS personalizados */
         body {
             background-color: lightblue;
             font-family: Arial, sans-serif;
@@ -53,6 +54,15 @@ use Laminas\Ldap\Ldap;
         .noMostrar {
             display: none;
         }
+
+        /* Nuevos estilos CSS */
+        header h2 {
+            font-size: 28px;
+        }
+
+        input[type="text"] {
+            font-size: 18px;
+        }
     </style>
 </head>
 
@@ -62,7 +72,7 @@ use Laminas\Ldap\Ldap;
     </header>
     <div>
         <?php
-        if ($_POST['method'] == "DELETE") {
+        if (isset($_POST['method']) && $_POST['method'] == "DELETE") {
             if ($_POST['usr'] && $_POST['ou']) {
 
                 $uid = $_POST['usr'];
