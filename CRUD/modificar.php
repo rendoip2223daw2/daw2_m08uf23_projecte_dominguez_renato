@@ -12,7 +12,61 @@ use Laminas\Ldap\Ldap;
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modificar Usuari</title>
-    </head>
+        <style>
+        /* Estilos para el encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilos para el enlace "Inici" */
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos para el título */
+        header h2 {
+            margin-top: 0;
+        }
+
+        /* Estilos para el formulario */
+        form {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las etiquetas de radio */
+        .formLabel {
+            margin-left: 10px;
+        }
+
+        /* Estilos para el botón "Modificar" */
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        /* Estilos para la entrada oculta */
+        .noMostrar {
+            display: none;
+        }
+    </style>
+</head>
     
     <body>
     <header>
@@ -56,7 +110,7 @@ use Laminas\Ldap\Ldap;
             ?>
                 <div>
                     <div>
-                        <form action="http://zend-redoip.fjeclot.net/projecte/modificar.php" method="POST" autocomplete="off">
+                        <form action="http://zend-redoip.fjeclot.net/projecte/CRUD/modificar.php" method="POST" autocomplete="off">
                         <br><input type="hidden" name="method" value="PUT" class="noMostrar"><br>
                             Unitat organitzativa: <input type="text" name="ou" placeholder="Unitat Organitzativa" required /><br><br>
                             Usuari: <input type="text" name="uid" placeholder="Usuari" required /> <br><br>
