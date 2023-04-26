@@ -11,6 +11,49 @@ use Laminas\Ldap\Ldap;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esborrar Usuari</title>
+    <style>
+        /* Aquí puedes poner tus estilos CSS */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: navy;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #001f4d;
+        }
+
+        .noMostrar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +91,7 @@ use Laminas\Ldap\Ldap;
         ?>
             <div>
                 <div>
-                    <form action="http://zend-allade.fjeclot.net/projecte/esborrar.php" method="POST" autocomplete="off">
+                    <form action="http://zend-redoip.fjeclot.net/projecte/CRUD/esborrar.php" method="POST" autocomplete="off">
                         <input type="hidden" name="method" value="DELETE" class="noMostrar"><br><br>
                         <input type="text" name="ou" placeholder="Unitat Organitzativa" required /><br><br>
                         <input type="text" name="usr" placeholder="Usuari" required /><br><br>
