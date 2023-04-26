@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1{
+            margin-left: 40%;
+            margin-top: 2%;
+        }
+        .fons{
+            margin-left: 28%;
+            margin-right: 10%;
+            margin-top: 5%;
+
+        }
+        .form-group{
+            margin-right: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Afegeix un Client</u></h1>
+    <form method="post" action="afegir.php">
+        <div class="fons" >
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">uid</label>        
+                    <input type="text" name="uid" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Unitat Organitzativa</label> 
+                    <input type="text" name="uOrganitzativa" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">uid Number</label> 
+                    <input type="text" name="uidNumber" class="form-control"> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">gid Number</label> 
+                    <input type="text" name="gidNumber" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Directori Personal</label> 
+                    <input type="text" name="DPersonal" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Shell</label> 
+                <input type="text" name="Shell" class="form-control"> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">CN</label> 
+                    <input type="text" name="cn" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">SN</label> 
+                    <input type="text" name="sn" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Given Name</label> 
+                    <input type="text" name="givenName" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">Adreça Postal</label> 
+                    <input type="text" name="PostalAdress" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Mobil</label> 
+                    <input type="text" name="mobile" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Numero telefon</label> 
+                    <input type="text" name="telephoneNumber" class="form-control"> 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">Title</label> 
+                <input type="text" name="title" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="">Description</label> 
+                    <input type="text" name="description" class="form-control"> 
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Enviar">
+        </div>
+        
+        
+
+
+    </form>
+</body>
+</html>
